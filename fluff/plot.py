@@ -592,6 +592,7 @@ class AnnotationPanel(ProfilePanel):
                            gend,
                            color=self.color,
                            solid_capstyle="butt",
+                           linewidth=0.8
                            )
                 # Exons
                 for exonstart, exonsize in zip(exonstarts, exonsizes):
@@ -632,7 +633,7 @@ class AnnotationPanel(ProfilePanel):
                                 aend,
                                 arrowstyle=GENE_ARROW,
                                 mutation_scale=(figheight * fig.dpi) / 8 / self.max_tracks * 1.5,
-                                linewidth=0.5,
+                                linewidth=0.6,
                                 color=self.color,
                         )
                         ax.add_patch(arr)
