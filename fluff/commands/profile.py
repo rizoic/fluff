@@ -28,7 +28,7 @@ def profile(args):
     scale = args.scale
     if scale:
         try:
-            scale = [int(x) for x in scale.split(",")]
+            scale = [float(x) for x in scale.split(",")]
         except Exception:
             print("Error in scale argument")
             sys.exit(1)
